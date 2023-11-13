@@ -3,9 +3,19 @@
 
   <body>
     <button onclick="goBackHome();">Take me back!!</button>
+    <p id=main>This should be changed</p>
     php 
     $file = fopen("ATMLpage.txt","r") or die("Unable to open!");
     echo fgets($myfile);
-    
+
+    <script>
+      const fs = require('fs');
+      var p1 = document.getElementById("main");
+      var x = window.location.search;
+      
+      var file1;
+      fs.readFile('ATMLpage.txt', (err,data) => {if (err) throw err; file1 = data;}
+      p1.innerHTML = file1;
+    </script>
   </body>
 </html>
