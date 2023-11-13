@@ -14,8 +14,8 @@
       var x = window.location.search;
       
       var file1;
-      fs.readFile('ATMLpage.txt', (err,data) => {if (err) throw err; file1 = data;}
-      p1.innerHTML = file1;
+      fs.readFile('ATMLpage.txt', (err,data) => {if (err) throw err; file1 = data;});
+      p1.insertAdjacentHTML("afterend",file1);
     </script>
   </body>
 </html>
