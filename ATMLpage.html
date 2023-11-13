@@ -9,12 +9,14 @@
     echo fgets($myfile);
 
     <script type='module'>
-      import * as fs from '/fs';
+      //import * as fs from '/fs';
       var p1 = document.getElementById("main");
       var x = window.location.search;
+
+      var reader = new FileReader();
       
-      var file1;
-      fs.readFile('ATMLpage.txt', (err,data) => {if (err) throw err; file1 = data;});
+      var file1 = reader.readAsText("ATMLpage.txt", "UTF-8");
+      //fs.readFile('ATMLpage.txt', (err,data) => {if (err) throw err; file1 = data;});
       p1.insertAdjacentHTML("afterend",file1);
     </script>
   </body>
