@@ -10,8 +10,15 @@
     <input type=text id=ATML_box name=ATML>
     <input type=submit value="Add HTML!">
   </form>
+
+  <button onclick="gotoSite();">Go to the user-made website!</button>
   <h3>Please don't submit anything malicious. I'm going to check everything that gets sent in to be sure, but I'd rather not give anyone a virus or anything like that.</h3>
   <h3>I hope you have fun!</h3>
   <h3>Just as a side note: I made this website in like 30 minutes after thinking about it for about 2, so don't expect too much too fast.</h3>
+  <script>
+    function gotoSite(){
+      window.location.href = "ATMLpage.php";
+    }
+  </script>
 </body>
 </html>
