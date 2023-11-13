@@ -1,0 +1,22 @@
+<html>
+
+  <body>
+    <h1>Thank you for submitting your HTML!</h1>
+    You submitted: <p id=ATML1>WHEEEEEEEEEEET</p>
+    
+    <button onclick=goHome();>Go back!</button>
+    <button onclick=chgSubmit();>ChgSubmit</button>
+    <script>
+      function goHome(){
+        window.location.href = "index.php";
+      }
+      var x = window.location.href;
+      var p1 = document.getElementById("ATML1");
+      p1.innerHTML = 'HELLO THERE';
+      function chgSubmit() {
+        p1.innerHTML = x;
+      }
+    </script>
+  </body>
+  
+</html>
